@@ -1,0 +1,159 @@
+/*
+Palette de couleurs :
+https://coolors.co/272838-f3de8a-eb9486-7e7f9a-f9f8f8
+*/
+body {
+  background: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+  /* margin: 0;
+  padding: 0; */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.intervenants,
+#actions,
+.attack {
+  background: #272838;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  padding: 2%;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+#player {
+  /* background-color: blue; */
+  width: auto;
+  text-align: center;
+}
+
+.player>span {
+  color: rgba(0, 208, 255, 0.418);
+}
+
+#resume_action {
+  border: solid 2px white;
+  width: 20%;
+  text-align: center;
+  word-wrap: break-word;
+  padding: 1%;
+  padding-top: 3%;
+}
+
+#play {
+  border: solid 2px rgba(255, 30, 0, 0.565);
+}
+
+#enemy {
+  /* background-color: red; */
+  width: auto;
+  text-align: center;
+}
+
+.enemy>span {
+  color: rgba(255, 25, 0, 0.748);
+}
+
+#emoji_player,
+#emoji_enemy {
+  font-size: 100px;
+}
+
+.hp {
+  border: solid 2px white;
+  text-align: center;
+  width: fit-content;
+  padding: 2%;
+}
+
+#actions {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+}
+
+#actions>h3 {
+  margin: 0;
+}
+
+button {
+  flex-grow: 1;
+  padding: 10px;
+  text-align: center;
+  width: fit-content;
+  height: 7vh;
+  margin-right: 1%;
+  border: none;
+  font-size: 15px;
+}
+
+.player.attack {
+  justify-content: center;
+  align-items: center;
+
+}
+
+.player.attack>button {
+  background-color: rgba(0, 208, 255, 0.418);
+  border-radius: 0% 50% 50% 0%;
+  color: white;
+  word-wrap: wrap;
+}
+
+.attack>button:disabled {
+  opacity: 0.3;
+}
+
+
+/* .player.attack>button:active {
+  background: yellow;
+} */
+/* .player.attack>button:focus-within {
+  background: yellow;
+} */
+
+.enemy.attack>button {
+  background-color: rgba(255, 30, 0, 0.437);
+  border-radius: 50% 0% 0% 50%;
+  color: white;
+}
+
+.player.attack>button:disabled {
+  opacity: 0.3;
+}
+
+#steal_lives {
+  border-radius: 50%;
+  width: max-content;
+}
+
+#winner {
+  visibility: hidden;
+  border: solid 2px rgba(255, 217, 0, 0.585);
+  display: inline;
+  padding: 1%;
+  width: 50%;
+}
+
+#emoji_winner {
+  background-color: rgba(255, 217, 0, 0.589);
+  font-size: 300px;
+  text-align: center;
+
+}
+
+.section_winner {
+  font-size: 50px;
+}

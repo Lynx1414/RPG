@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>RGP</title>
+</head>
+
+<body>
+  <main>
+    <section class="intervenants">
+
+      <div id="player">
+        <div class="healthbar player">
+          <span style="font-size: 25px">Player</span>
+          <div id="emoji_player">🧙‍♀️</div>
+          <span class="hp" id="player_lives" style="font-size: 25px">Player lives</span>
+        </div>
+      </div>
+
+      <div id="resume_action">
+        <div>
+          <button id="play" onclick="startTheGame()">PLAY</button>
+          <p onclick="startTheGame()">READY TO START ?</p><br>
+          <!-- <p id="try_again" onclick="tryAgain()"></p> -->
+
+
+        </div>
+      </div>
+
+
+
+
+      <div id="enemy">
+        <div class="healthbar enemy">
+          <span style="font-size: 25px">Enemy</span>
+          <div id="emoji_enemy">👹</div>
+          <span class="hp" id="enemy_lives" style="font-size: 20px">Enemy lives</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="actions">
+      <h3>Actions</h3>
+      <div class="player attack">
+        <button class="hands" onclick="attackWithHands()">Hands attack 👊</button>
+        <button class="sword" onclick="attackWithSword()">Sword attack ⚔️</button>
+        <button class="sword" onclick="attackWithSword()">Fire attack 🔥</button>
+        <button class="combo" onclick="comboAttack(3)">Combo attack 🔥🔥</button>
+        <button class="boost" onclick="boostAttack('sword')">Boost attack ⚔️ ⚔️</button>
+        <button id="small_potion" onclick="takePotion(miniPotion)">Small potion 🍸</button>
+        <button id="big_potion" onclick="takePotion(maxiPotion)">Big potion 🍺</button>
+        <button id="steal_lives" onclick="vol_de_vie()" style="font-size: 30px"> 💡 </button>
+      </div>
+      <div class="enemy attack">
+        <button class="enemy_attack" onclick="enemyAttack()">Enemy attack 🔥</button>
+        <button id="take_big_potion" onclick="takeEnemyPotion(maxiPotion)">Take big potion
+          🍺</button>
+        <button id="take_small_potion" onclick="takeEnemyPotion(miniPotion)">Take small potion
+          🍸</button>
+      </div>
+    </section>
+
+    <section id="winner">
+      <div class="section_winner">
+        <div>
+          <span class="section_winner">The Winner is ....</span>
+          <div id="emoji_winner">?</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+<script src="script.js"></script>
+
+</html>
